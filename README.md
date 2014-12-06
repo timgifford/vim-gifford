@@ -15,6 +15,9 @@ Not Included:
 I'm using bundler to manage gem dependancies. This is used for the
 installation routine.
 
+```
+gem install bundler
+```
 
 ### Mac
 ```
