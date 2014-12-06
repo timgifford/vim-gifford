@@ -15,21 +15,22 @@ Not Included:
 I'm using bundler to manage gem dependancies. This is used for the
 installation routine.
 
+### Pre-Requisites
 ```
 gem install bundler
 ```
 
 ### Mac
 ```
-cd ~
-git clone https://github.com/timgifford/vim-gifford/ .vim
+git clone https://github.com/timgifford/vim-gifford/ ~/.vim
+cd ~/.vim
 bundle exec rake install
 ```
 
 ### Windows
 ```
-cd ~
-git clone https://github.com/timgifford/vim-gifford/ vimfiles
+git clone https://github.com/timgifford/vim-gifford/ ~/vimfiles
+cd ~/vimfiles
 bundle exec rake install
 ```
 

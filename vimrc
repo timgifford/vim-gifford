@@ -43,9 +43,10 @@ nnoremap <silent> <leader><cr> :noh<cr>
 
 set wrap linebreak nolist
 
-nnoremap <leader>ev :vsplit ~/.vimrc<cr>
-nnoremap <leader>eb :vsplit ~/vimfiles/bundles.sh<cr>
-nnoremap <leader>sv :source ~/.vimrc<cr>
+" TODO: Make this for both Windows and Mac
+"nnoremap <leader>ev :vsplit ~/.vimrc<cr>
+"nnoremap <leader>eb :vsplit ~/vimfiles/bundles.sh<cr>
+"nnoremap <leader>sv :source ~/.vimrc<cr>
 inoremap jk <esc>
 inoremap <esc> <nop>
 
