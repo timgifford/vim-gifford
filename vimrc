@@ -1,4 +1,7 @@
+execute pathogen#infect()
+
 let mapleader = ","
+
 "let g:mapleader = ","
 
 " No annoying sound on errors

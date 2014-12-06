@@ -3,6 +3,7 @@ require 'os'
 desc 'add all the submodules'
 task :init do
   `git submodule add git://github.com/tpope/vim-fugitive.git bundle/vim-fugitive`
+
 end
 
 desc "install"
