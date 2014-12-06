@@ -10,12 +10,29 @@ set novisualbell
 set t_vb=
 set tm=500
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Files, backups and undo
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set nocompatible    " Use vim, no vi defaults
+set number          " Show line numbers
+set ruler           " Show line and column number
+syntax enable       " Syntax highlighting on files
+
+" Searching
+set hlsearch    " highlight matches
+set incsearch   " incremental searching
+set ignorecase  " searches are case insensitive...
+set smartcase   " ... unless they contain at least one capital letter
+
+" Tab settings
+set smartindent
+set tabstop=4
+set shiftwidth=4
+set expandtab       "Use spaces, not tabs
+" set backspace=indent,eol,start  " backspace through everything in insert mode
+
+filetype plugin indent on
+
 " Turn backup off, since most stuff is in SVN, git et.c anyway...
 set nobackup
-set nowb
+set nowritebackup
 set noswapfile
 
 " Switch CWD to the directory of the open buffer
@@ -26,10 +43,13 @@ nnoremap <silent> <leader><cr> :noh<cr>
 
 set wrap linebreak nolist
 
-"nnoremap <leader>ev :vsplit ~/.vimrc.after<cr>
-"nnoremap <leader>sv :source ~/.vimrc.after<cr>
+nnoremap <leader>ev :vsplit ~/.vimrc<cr>
+nnoremap <leader>eb :vsplit ~/vimfiles/bundles.sh<cr>
+nnoremap <leader>sv :source ~/.vimrc<cr>
 inoremap jk <esc>
 inoremap <esc> <nop>
+
+nnoremap <leader>n :NERDTreeToggle<CR>  " Toggle the NerdTree
 
 nnoremap <leader>d :bprevious<CR>:bdelete #<CR>   " Close a buffer without losing the spliv
 nnoremap <leader>bd :bdelete<CR>                  " Close the current buffer
@@ -39,3 +59,11 @@ nnoremap <leader>< :10winc <<CR>
 
 " Copy to the Copy|Paste Buffer
 vnoremap <leader>y "*y
+vnoremap <leader>p "*p
+
+" Set the color scheme
+color hybrid
+
+" Make cut | copy | paste as with Ctrl + C, V, and P
+source $VIMRUNTIME/mswin.vim
+

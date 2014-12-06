@@ -1,0 +1,5 @@
+" Set the font and size. Bigger is better for old man eyes
+set guifont=Consolas:h14
+
+" Copy to the Windows Clipboard
+set clipboard=unnamed
