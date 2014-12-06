@@ -57,6 +57,14 @@ nnoremap <leader>ba :1,1000 bd!<cr>               " Close all the buffers
 nnoremap <leader>> :10winc ><CR>
 nnoremap <leader>< :10winc <<CR>
 
+" NERDCommenter mappings
+" if has("gui_macvim") && has("gui_running")
+map <D-/> <plug>NERDCommenterToggle<CR>
+imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
+map <leader>/ <plug>NERDCommenterToggle<CR>
+" endif
+
+
 " Copy to the Copy|Paste Buffer
 vnoremap <leader>y "*y
 vnoremap <leader>p "*p
