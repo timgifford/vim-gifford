@@ -65,7 +65,16 @@ imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
 map <leader>/ <plug>NERDCommenterToggle<CR>
 " endif
 
-
+" PEP8 Standard Python
+au BufNewFile,BufRead *.py
+    \ set tabstop=4
+    \ set softtabstop=4
+    \ set shiftwidth=4
+    \ set textwidth=79
+    \ set expandtab
+    \ set autoindent
+    \ set fileformat=unix
+"
 " Copy to the Copy|Paste Buffer
 vnoremap <leader>y "*y
 vnoremap <leader>p "*p
