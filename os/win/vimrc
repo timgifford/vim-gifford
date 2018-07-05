@@ -3,3 +3,5 @@ set guifont=Consolas:h14
 
 " Copy to the Windows Clipboard
 set clipboard=unnamed
+
+let shell='cmd.exe'

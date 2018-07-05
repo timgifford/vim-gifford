@@ -28,7 +28,7 @@ task :init do
         # "http://github.com/tsaleh/vim-matchit.git",
         # "http://github.com/tsaleh/vim-shoulda.git",
         # "http://github.com/tsaleh/vim-tmux.git",
-        # "http://github.com/vim-ruby/vim-ruby.git",
+        "http://github.com/vim-ruby/vim-ruby.git",
         # "http://github.com/vim-scripts/Gist.vim.git",
     ]
 
