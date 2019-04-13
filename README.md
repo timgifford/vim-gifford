@@ -31,6 +31,7 @@ bundle exec rake install
 ```
 git clone https://github.com/timgifford/vim-gifford/ ~/vimfiles
 cd ~/vimfiles
+gem install bundler -v '1.17.3'
 bundle exec rake install
 ```
 
