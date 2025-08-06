@@ -1,5 +1,7 @@
 execute pathogen#infect()
 
+set guifont=Monaco:h16
+
 let mapleader = ","
 
 "let g:mapleader = ","
@@ -80,7 +82,7 @@ vnoremap <leader>y "*y
 vnoremap <leader>p "*p
 
 " Set the color scheme
-color hybrid
+" color hybrid
 
 " Make cut | copy | paste as with Ctrl + C, V, and P
 source $VIMRUNTIME/mswin.vim
